@@ -1,0 +1,39 @@
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VOID VOICES — Reviews</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="style.css">
+</head><body><header class="site-header">
+  <a class="logo" href="index.html">VOID<span>.</span></a>
+  <nav class="main-nav">
+    <a href="archive.html">The Archive</a>
+    <a href="voices.html">VOID Voices</a>
+    <a href="index.html#about">About</a>
+    <a class="nav-cta" href="custom.html">Send your idea <span>↗</span></a>
+  </nav>
+  <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+</header>
+<main><section class="page-intro"><p class="eyebrow"><span class="live-dot"></span> COMMUNITY / FEEDBACK</p><h1>VOID<br><span>VOICES.</span></h1><p>Real people. Real experiences. Leave a review and become part of the VOID story.</p></section>
+<section class="content-wrap">
+<div class="review-summary"><div class="review-score" id="reviewAverage">—</div><div><strong>COMMUNITY RATING</strong><p id="reviewCount">Loading reviews...</p></div></div>
+<div class="review-layout">
+<div><p class="section-kicker">01 — THE COMMUNITY</p><div class="review-list" id="reviewList"><div class="empty-reviews">Loading approved reviews...</div></div></div>
+<div><p class="section-kicker">02 — LEAVE YOUR MARK</p>
+<form id="reviewForm" class="review-form">
+<label class="field"><span>Your name *</span><input name="review_name" maxlength="60" placeholder="Name or nickname" required></label>
+<label class="field"><span>Your rating *</span></label>
+<div class="rating-picker" id="ratingPicker" aria-label="Choose a rating">
+<button type="button" data-rating="1" aria-label="1 star">★</button><button type="button" data-rating="2" aria-label="2 stars">★</button><button type="button" data-rating="3" aria-label="3 stars">★</button><button type="button" data-rating="4" aria-label="4 stars">★</button><button type="button" data-rating="5" aria-label="5 stars">★</button>
+</div>
+<label class="field"><span>Your experience *</span><textarea name="review_message" rows="5" maxlength="1000" placeholder="Tell us what you think about VOID..." required></textarea></label>
+<button class="button button-primary" id="reviewSubmit" type="submit">SUBMIT REVIEW ↗</button>
+<p class="notice">Reviews are saved in the VOID database. They appear publicly after approval, to keep the page clean from spam.</p>
+<p class="form-result" id="reviewResult" role="status" aria-live="polite"></p>
+</form></div></div>
+</section></main><footer class="site-footer">
+  <a class="logo" href="index.html">VOID<span>.</span></a>
+  <p>INDEPENDENT STREETWEAR — TUNISIA</p>
+  <p>© 2026 VOID. ALL RIGHTS RESERVED.</p>
+</footer>
+<script src="script.js"></script>
+</body></html>

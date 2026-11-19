@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VOID SIGNAL — Send your idea</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="custom-page">
+<header class="site-header">
+  <a class="logo" href="index.html">VOID<span>.</span></a>
+  <nav class="main-nav">
+    <a href="archive.html">The Archive</a>
+    <a href="voices.html">VOID Voices</a>
+    <a href="index.html#about">About</a>
+    <a class="nav-cta" href="custom.html">Send your idea <span>↗</span></a>
+  </nav>
+  <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+</header>
+<main class="custom-main">
+  <div class="custom-intro">
+    <p class="eyebrow"><span class="live-dot"></span> THE VOID REQUEST VAULT</p>
+    <h1>YOUR IDEA.<br><span>YOUR PIECE.</span></h1>
+    <p>Send a signal. Tell us what you want to wear. Our team will receive your request and get back to you.</p>
+  </div>
+  <form id="designForm" class="custom-form">
+    <div class="form-heading"><span>01 / YOUR DETAILS</span><span class="required-note">* Required fields</span></div>
+    <div class="form-grid">
+      <label class="field">
+        <span>Full name *</span>
+        <input
+  type="text"
+  id="client_name"
+  name="client_name"
+  placeholder="First name Last name"
+  autocomplete="name"
+  minlength="3"
+  maxlength="80"
+  pattern="[A-Za-zÀ-ÖØ-öø-ÿ]+([ '-][A-Za-zÀ-ÖØ-öø-ÿ]+)+"
+  title="Enter your first and last name using letters and spaces only."
+  required
+>
+        <small class="field-hint">Use letters and at least two words.</small>
+      </label>
+      <div class="field phone-field">
+        <span>Phone number *</span>
+        <div class="selected-country" id="selectedCountry" aria-live="polite">
+          <img src="https://flagcdn.com/w40/tn.png" alt="Tunisia flag">
+          <strong>Tunisia</strong><span>+216</span>
+        </div>
+        <div class="flag-shortcuts" id="flagShortcuts" aria-label="Popular country codes">
+          <button type="button" class="flag-choice active" data-country="tn" aria-label="Tunisia +216"><img src="https://flagcdn.com/w40/tn.png" alt=""><span>TN</span></button>
+          <button type="button" class="flag-choice" data-country="fr" aria-label="France +33"><img src="https://flagcdn.com/w40/fr.png" alt=""><span>FR</span></button>
+          <button type="button" class="flag-choice" data-country="de" aria-label="Germany +49"><img src="https://flagcdn.com/w40/de.png" alt=""><span>DE</span></button>
+          <button type="button" class="flag-choice" data-country="it" aria-label="Italy +39"><img src="https://flagcdn.com/w40/it.png" alt=""><span>IT</span></button>
+          <button type="button" class="flag-choice" data-country="gb" aria-label="United Kingdom +44"><img src="https://flagcdn.com/w40/gb.png" alt=""><span>UK</span></button>
+          <button type="button" class="flag-choice" data-country="us" aria-label="United States +1"><img src="https://flagcdn.com/w40/us.png" alt=""><span>US</span></button>
+          <button type="button" class="flag-choice" data-country="ca" aria-label="Canada +1"><img src="https://flagcdn.com/w40/ca.png" alt=""><span>CA</span></button>
+          <button type="button" class="flag-choice more-countries" id="moreCountries" aria-expanded="false">＋ <span>MORE</span></button>
+        </div>
+        <div class="country-browser" id="countryBrowser" hidden>
+          <input type="search" id="countrySearch" placeholder="Search a country..." aria-label="Search countries">
+          <div class="country-grid" id="countryGrid"></div>
+        </div>
+        <input type="tel" id="client_contact" name="client_contact" placeholder="Enter your phone number" autocomplete="tel-national" inputmode="tel" required>
+        <small class="field-hint">Choose your country flag, then enter your phone number.</small>
+      </div>
+
+      <div class="form-group">
+  <label for="client_email">EMAIL ADDRESS *</label>
+  <input
+    type="email"
+    id="client_email"
+    name="client_email"
+    placeholder="Enter your email address"
+    autocomplete="email"
+    required
+  >
+</div>
+    </div>
+    <div class="form-heading"><span>02 / CHOOSE YOUR PIECE</span></div>
+    <label class="field"><span>Garment type *</span>
+      <select id="product" name="product" required>
+        <option value="" disabled selected>Choose a garment</option>
+        <option>Hoodie</option><option>Oversized Hoodie</option><option>Sweatshirt</option><option>T-shirt</option><option>Pants</option><option>Other</option>
+      </select>
+    </label>
+    <div class="custom-options">
+
+    <div class="option-group">
+        <div class="form-heading"><span>03 / CHOOSE SIZE</span></div>
+        <div class="size-options">
+            <button type="button">XS</button>
+            <button type="button">S</button>
+            <button type="button">M</button>
+            <button type="button">L</button>
+            <button type="button">XL</button>
+            <button type="button">XXL</button>
+        </div>
+    </div>
+
+    <div class="option-group">
+        <div class="form-heading"><span>04 /CHOOSE COLOR</span></div>
+        <div class="color-options">
+            <button type="button" class="color-btn black" title="Black"></button>
+            <button type="button" class="color-btn white" title="White"></button>
+            <button type="button" class="color-btn grey" title="Grey"></button>
+            <button type="button" class="color-btn red" title="Red"></button>
+            <button type="button" class="color-btn blue" title="Blue"></button>
+            <button type="button" class="color-btn beige" title="Beige"></button>
+        </div>
+    </div>
+
+</div>
+    <div class="form-heading"><span>05 / UPLOAD YOUR DESIGN</span></div>
+    <label class="upload-zone" for="design">
+      <input type="file" id="design" name="design" accept="image/png,image/jpeg,image/webp">
+      <span class="upload-icon">＋</span><strong>Drop your image here</strong><span>or click to choose a file</span>
+      <small>PNG, JPG or WEBP — 10 MB maximum (optional)</small>
+    </label>
+    <div id="preview" class="preview-box" hidden><img id="previewImage" alt="Design preview"><div><strong id="fileName"></strong><span id="fileSize"></span></div><button type="button" id="removeFile" class="remove-file">Remove ×</button></div>
+    <label class="field"><span>Describe your idea</span><textarea id="details" name="details" rows="5" maxlength="1500" placeholder="Colors, logo placement, text, size..."></textarea></label>
+    <div class="form-foot"><p>By submitting this form, you agree that we may contact you about your request.</p><button class="button button-primary submit-button" id="submitButton" type="submit">SEND YOUR SIGNAL <span>↗</span></button></div>
+    <p id="result" class="form-result" role="status" aria-live="polite"></p>
+  </form>
+</main>
+<footer class="site-footer">
+  <a class="logo" href="index.html">VOID<span>.</span></a>
+  <p>INDEPENDENT STREETWEAR — TUNISIA</p>
+  <p>© 2026 VOID. ALL RIGHTS RESERVED.</p>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/intl-tel-input@25.3.1/build/js/intlTelInput.min.js"></script>
+<script src="script.js"></script>
+</body></html>
